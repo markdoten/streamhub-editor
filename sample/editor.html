@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Streamhub-editor</title>
+        <script src="/lib/cajon/cajon.js"></script>
+        <script src="/requirejs.conf.js"></script>
+        <script>
+            require([
+                'streamhub-editor/editor'
+            ], function(Editor) {
+                var _editor = new Editor({
+                    el: document.getElementById('editor')
+                });
+                _editor.render();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="editor" />
+    </body>
+</html>
