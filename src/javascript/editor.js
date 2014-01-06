@@ -93,9 +93,6 @@ Editor.prototype.sendPostEvent = util.abstractMethod;
  */
 Editor.prototype.showError = util.abstractMethod;
 
-/** @override */
-Editor.prototype.template = require('hgn!templates/editor');
-
 /**
  * Validate the post data.
  * @param {Object} data The post data to be validated.

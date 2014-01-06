@@ -6,6 +6,10 @@ var sinon = require('sinon');
 describe('streamhub-editor/editor', function() {
     var div, postBtnEl, view;
 
+    // The editor class doesn't have a template by default, but add one now so
+    // that we can run some test cases.
+    Editor.prototype.template = require('hgn!templates/editor');
+
     beforeEach(function() {
         div = document.createElement('div');
         view = new Editor({
